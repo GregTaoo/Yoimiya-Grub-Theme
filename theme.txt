@@ -1,33 +1,43 @@
 desktop-image: "background.png"
-desktop-color: "#1C1C1C"
+title-text: ""
+terminal-left: "20%"
+terminal-top: "35%"
+terminal-width: "60%"
+terminal-height: "40%"
+terminal-box: "menu_bkg_*.png"
+terminal-font: "Unifont Regular 24"
 
 + boot_menu {
-  left = 50%-640
-  top = 50%-390
-  width = 1280
-  height = 780
-  item_font = "Unifont Regular 24"
-  item_color = "#CDD6F4"
-  selected_item_color = "#CDD6F4"
-  icon_width = 48
-  icon_height = 48
-  item_icon_space = 24
-  item_height = 60
-  item_padding = 10
-  item_spacing = 12
+  menu_pixmap_style = "boot_menu_*.png"
+  left = 20%
+  width = 60%
+  top = 30%
+  height = 40%
+  item_font = "Unifont Regular 40"
+  item_color = "#919090"
+  selected_item_font = "Unifont Regular 44"
+  selected_item_color = "#ffffff"
+  icon_width = 40
+  icon_height = 40
+  item_icon_space = 20
+  item_height = 50
+  item_padding = 16
+  item_spacing = 20
   selected_item_pixmap_style = "select_*.png"
-  background_color = "#1C1C1C"
-  background_border_radius = 48
+  scrollbar = true
+  scrollbar_width = 10
+  scrollbar_thumb = "slider_*.png"
 }
 
-+ label {
-  top = 80%
-  left = 0
-  width = 100%
-  align = "center"
++ progress_bar {
   id = "__timeout__"
-  text = "Booting in %d seconds"
-  color = "#CDD6F4"
-  font = "Unifont Regular 24"
+  left = 25%
+  width = 50%
+  top = 75%
+  height = 20
+  text = ""
+  text_color = "#ffffff"
+  font = "Unifont Regular 16"
+  bar_style = "progress_bar_*.png"
+  highlight_style = "progress_highlight_*.png"
 }
-
